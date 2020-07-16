@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BioSample</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="home_fragment_label">Home Fragment</string>
+    <string name="biometric_fragment_label">Biometric Fragment</string>
+    <string name="fingerprint_fragment_label">FingerPrint Fragment</string>
+    <string name="next">Biometric</string>
+    <string name="fingerprint">FingerPrint</string>
+    <string name="previous">Goto Home</string>
+
+    <string name="home_fragment_title">Bio 인증 예제</string>
+    <string name="biometric_fragment_title">Biometric 인증 화면</string>
+    <string name="fingerprint_fragment_title">FingerPrint 인증 화면</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

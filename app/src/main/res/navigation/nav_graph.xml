@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.gsretail.biosample.HomeFragment"
+        android:label="@string/home_fragment_label"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_BiometricFragment"
+            app:destination="@id/BiometricFragment" />
+
+        <action
+            android:id="@+id/action_HomeFragment_to_FingerPrintFragment"
+            app:destination="@id/FingerPrintFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BiometricFragment"
+        android:name="com.gsretail.biosample.BiometricFragment"
+        android:label="@string/biometric_fragment_label"
+        tools:layout="@layout/fragment_biometric">
+
+        <action
+            android:id="@+id/action_BiometricFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment"
+            app:popUpTo="@+id/HomeFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/FingerPrintFragment"
+        android:name="com.gsretail.biosample.FingerPirntFragment"
+        android:label="@string/fingerprint_fragment_label"
+        tools:layout="@layout/fragment_fingerprint">
+
+        <action
+            android:id="@+id/action_FingerPrintFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+</navigation>
